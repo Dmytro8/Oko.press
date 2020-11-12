@@ -1,0 +1,18 @@
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 30px;
+  gap: 50px;
+}
+
+@media screen and (max-width: 1260px) {
+  .articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .articles {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
